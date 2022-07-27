@@ -40,9 +40,8 @@
 #'
 #' @importFrom rapportools is.empty
 #'
-#' @examples
-#' measures(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", "Fixed distance")
-#' measures(data_Tobii, "Tobii", "10.jpg", "Participant19", "AOI", size = c(1920, 1080), time = TRUE)
+#' @examples measures(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", "Fixed distance")
+#' @examples measures(data_Tobii, "Tobii", "10.jpg", "Participant19", "AOI", size = c(1920, 1080), time = TRUE)
 #'
 #' @export
 measures = function(data, eye_tracker = "SMI", object, participant, method = "Fixed distance", r = 60, size = c(1920, 1200),  L = 2, time = FALSE) {

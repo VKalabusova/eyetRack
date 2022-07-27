@@ -37,9 +37,8 @@
 #'
 #' @return List - data frame (K - elements of coefficient K) and plot (K_plot - visualization of elements K_i, title includes final coefficient K)
 #'
-#' @examples
-#' coeffK_single(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", 60, c(-5, 5))
-#' coeffK_single(data_Tobii, "Tobii", "10.jpg", "Participant19", 60)
+#' @examples coeffK_single(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", 60, c(-5, 5))
+#' @examples coeffK_single(data_Tobii, "Tobii", "10.jpg", "Participant19", 60)
 #'
 #' @export
 coeffK_single = function(data, eye_tracker = "SMI", object, participant, distance, lim = c(-10,10), point_col = "steelblue", point_size = 3, title_size = 13, x_size = 10, x_angle = 0, x_labsize = 10, y_size = 10, y_angle = 0, y_labsize = 10) {

@@ -42,23 +42,25 @@ barplots_AOI(
 
 \item{bar_width}{width of bars}
 
-\item{title_size}{the size of title}
+\item{top_size}{the size of title}
+
+\item{title_size}{the size of title of each barplot}
 
 \item{col_man}{if you do not want to set colours of bars manually (FALSE). If you want to set colours of bars manually (TRUE). Default value is FALSE.}
 
 \item{col_set}{vector of n colours (n - number of unique AOIs in dataset). If col_man = T.}
 
-\item{x_size}{the size of text ticks on x lab}
+\item{x_size}{x lab ticks font size}
 
 \item{x_angle}{the angle of text on x lab}
 
-\item{x_labsize}{the size of  text on x lab}
+\item{x_labsize}{x lab font size}
 
-\item{y_size}{the size of text ticks on y lab}
+\item{y_size}{y lab ticks font size}
 
 \item{y_angle}{the angle of text on y lab}
 
-\item{y_labsize}{the size of text on y lab}
+\item{y_labsize}{y lab font size}
 }
 \value{
 The left hand side barplot will represent number of fixations in each area of interest. The right hand side barplot will represent dwell time.
@@ -82,6 +84,6 @@ You will be able to find the relevant variables for Tobii eye trackers within pa
 }
 \examples{
 barplots_AOI(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", count = "absolute")
-barplots_AOI(data_Tobii, "Tobii", "10.jpg", "Participant19", count = "relative", same_col = F, col_man = T, col_set = c("steelblue", "yellow"))
+barplots_AOI(data_Tobii, "Tobii", "10.jpg", "Participant19", count = "relative", same_col = FALSE, col_man = TRUE, col_set = c("steelblue", "yellow"))
 
 }

@@ -35,9 +35,8 @@
 #'
 #' @return List - data frame (K - coefficient K) and plot (K_plot - visualization)
 #'
-#' @examples
-#' coeff_K(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", 60)
-#' coeff_K(data_Tobii, "Tobii", "10.jpg", "Participant19", 60, point_col = "green")$K_plot
+#' @examples coeff_K(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", 60)
+#' @examples coeff_K(data_Tobii, "Tobii", "10.jpg", "Participant19", 60, point_col = "green")$K_plot
 #'
 #' @export
 coeff_K = function(data, eye_tracker = "SMI", object, participant, distance, lim = c(-1,1), point_col = "steelblue", point_size = 3, title_size = 13, x_size = 10, x_angle = 0, x_labsize = 10, y_size = 10, y_angle = 0, y_labsize = 10) {

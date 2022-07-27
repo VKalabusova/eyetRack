@@ -5,7 +5,7 @@
 \alias{data_SMI}
 \title{Data SMI}
 \format{
-A data frame with 25 rows and 9 variables:
+Data frame with 25 rows and 9 variables:
 \itemize{
     \item Stimulus - the name of a stimuli
     \item Participant - the name of a participant

@@ -58,9 +58,19 @@ recurrence(
 
 \item{bubble_col}{colour of bubble representing relative duration of fixation (fixed distance, fixed grid with time involved)}
 
+\item{title_size}{title font size}
+
 \item{legend_size}{legend font size}
 
-\item{breaks}{breaks on x and y axis.}
+\item{x_labsize}{x lab font size}
+
+\item{y_labsize}{y lab font size}
+
+\item{x_size}{x lab ticks font size}
+
+\item{y_size}{y lab ticks font size}
+
+\item{breaks}{breaks on x and y axis}
 
 \item{lightness}{lightness of bubble in RP}
 }
@@ -96,6 +106,6 @@ You will be able to find the relevant variables for Tobii eye trackers within pa
 }
 \examples{
 recurrence(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", "Fixed distance", point_col = "blue", bubble_col = "steelblue", legend_size = 10, lightness = 0.2)$Rec_plot
-recurrence(data_Tobii, "Tobii", "10.jpg", "Participant19", "AOI", size = c(1920, 1080),  time = F)
+recurrence(data_Tobii, "Tobii", "10.jpg", "Participant19", "AOI", size = c(1920, 1080),  time = FALSE)
 
 }

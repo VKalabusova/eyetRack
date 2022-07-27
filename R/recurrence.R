@@ -39,9 +39,15 @@
 #' @param point_size size of points
 #' @param point_col colour of points (fixed distance and fixed grid)
 #' @param bubble_col colour of bubble representing relative duration of fixation (fixed distance, fixed grid with time involved)
+#' @param title_size title font size
 #' @param legend_size legend font size
-#' @param breaks breaks on x and y axis.
+#' @param x_labsize x lab font size
+#' @param y_labsize y lab font size
+#' @param x_size x lab ticks font size
+#' @param y_size y lab ticks font size
+#' @param breaks breaks on x and y axis
 #' @param lightness lightness of bubble in RP
+#'
 #'
 #' @return list Recurrence matrix, Recurrence plot
 #'
@@ -49,9 +55,8 @@
 #' @importFrom Thermimage rotate270.matrix
 #' @importFrom tidyr gather
 #'
-#' @examples
-#' recurrence(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", "Fixed distance", point_col = "blue", bubble_col = "steelblue", legend_size = 10, lightness = 0.2)$Rec_plot
-#' recurrence(data_Tobii, "Tobii", "10.jpg", "Participant19", "AOI", size = c(1920, 1080),  time = F)
+#' @examples recurrence(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", "Fixed distance", point_col = "blue", bubble_col = "steelblue", legend_size = 10, lightness = 0.2)$Rec_plot
+#' @examples recurrence(data_Tobii, "Tobii", "10.jpg", "Participant19", "AOI", size = c(1920, 1080),  time = FALSE)
 #'
 #' @export
 recurrence = function(data, eye_tracker = "SMI", object, participant, method = "Fixed distance", r = 60, scaling = 100,  size = c(1920, 1200), time = FALSE, col_man = FALSE, col_set = c(), point_size = 1.5, point_col = "darkblue", bubble_col = "steelblue", title_size = 15, legend_size = 5, x_labsize = 10, y_labsize = 10, x_size = 10, y_size = 10, breaks = 2, lightness = 0.2) {

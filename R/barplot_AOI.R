@@ -24,16 +24,18 @@
 #' @param same_col same colour of barplots (TRUE/FALSE). Default value TRUE.
 #' @param bar_col colour of bars (character). Default value "steelblue".
 #' @param bar_width width of bars
-#' @param title_size the size of title
+#' @param top_size the size of title
+#' @param title_size the size of title of each barplot
 #' @param col_man if you do not want to set colours of bars manually (FALSE). If you want to set colours of bars manually (TRUE). Default value is FALSE.
 #' @param col_set vector of n colours (n - number of unique AOIs in dataset). If col_man = T.
-#' @param x_size the size of text ticks on x lab
+#' @param x_size x lab ticks font size
 #' @param x_angle the angle of text on x lab
-#' @param x_labsize the size of  text on x lab
-#' @param y_size the size of text ticks on y lab
+#' @param x_labsize x lab font size
+#' @param y_size y lab ticks font size
 #' @param y_angle the angle of text on y lab
-#' @param y_labsize the size of text on y lab
+#' @param y_labsize y lab font size
 #'
+#' @importFrom stats aggregate na.omit sd
 #' @import ggplot2
 #' @importFrom ggpubr text_grob
 #' @import gridExtra
@@ -45,7 +47,7 @@
 #' @return The left hand side barplot will represent number of fixations in each area of interest. The right hand side barplot will represent dwell time.
 #'
 #' @examples barplots_AOI(data_SMI, "SMI", "09-M1-CX-SI-VE.jpg", "P16", count = "absolute")
-#' @examples barplots_AOI(data_Tobii, "Tobii", "10.jpg", "Participant19", count = "relative", same_col = F, col_man = T, col_set = c("steelblue", "yellow"))
+#' @examples barplots_AOI(data_Tobii, "Tobii", "10.jpg", "Participant19", count = "relative", same_col = FALSE, col_man = TRUE, col_set = c("steelblue", "yellow"))
 #'
 #' @export
 barplots_AOI = function (data, eye_tracker = "SMI", object, participant, count = "absolute", same_col = T, bar_col = "steelblue", bar_width = 0.7, top_size = 15, title_size = 12, col_man = F, col_set = c(), x_size = 10, x_angle = 0, x_labsize = 10, y_size = 10, y_angle = 0, y_labsize = 10){

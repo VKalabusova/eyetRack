@@ -5,7 +5,7 @@
 \alias{data_Tobii}
 \title{Data Tobii}
 \format{
-A data frame with 15 rows and 9 variables:
+Data frame with 15 rows and 9 variables:
 \itemize{
     \item Participant.name - the name of a participant
     \item Presented.Media.name - the name of stimuli
@@ -14,8 +14,8 @@ A data frame with 15 rows and 9 variables:
     \item Eye.movement.type.index - Index of fixation
     \item Fixation.point.X - X-position of fixation [px]
     \item Fixation.point.Y - Y-position of fixation [px]
-    \item AOI.hit..10...right - 1/0 hit right area of interest
-    \item AOI.hit..10...left - 1/0 hit left area of interest
+    \item AOI.hit..10...right - hit right area of interest (1 yes, 0 no)
+    \item AOI.hit..10...left - hit left area of interest (1 yes, 0 no)
 }
 }
 \usage{
