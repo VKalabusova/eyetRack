@@ -1,0 +1,27 @@
+Package: eyetRack
+Type: Package
+Title: Package for Analysing eye-tracking data from eye-tracker SMI or Tobii
+Version: 0.1.0
+Author: Veronika Kalabusova <w.kalabusova@seznam.cz>
+Maintainer: Veronika Kalabusova <w.kalabusova@seznam.cz>
+Description: eyetRack is a R package which facilitates the accessible analysis of eye-tracking data from SMI or Tobii eye-trackers. It offers a basic analysis for the initial conception of the number and duration of fixations. Barplot visualization allows to show a number of fixations in each Area of Interest and Dwell Time. The tool also offers visualization of the scanpath above the stimulus. The essential functionality of the application is the analysis through recurrence and recurrence quantification analysis. The recurrence plot can be displayed. However, visualization of recurrent fixations can often predispose to subjective bias when evaluating a set of results. For that reason, we used recurrence quantification analysis measures, which allow us to quantify data displayed in the recurrence plot. Using RQA, we can compare different tasks or compare multiple participants. The last functionality of the application is the calculation of coefficient K, which helps distinguish focal and ambient attention. 
+Imports:
+    tidyr,
+    png,
+    jpeg,
+    ggplot2,
+    ggforce,
+    ggrepel,
+    grid, 
+    gridExtra,
+    rapportools,
+    patchwork,
+    devtools,
+    roxygen2,
+    Thermimage,
+    scales,
+    dplyr
+License: free
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
